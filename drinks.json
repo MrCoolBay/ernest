@@ -1,0 +1,216 @@
+{
+    "drinks": [
+        {
+            "categorie": "Whisky",
+            "nom": "Jack Daniels",
+            "degre": 40,
+            "compositions": ["Eau", "Malt d'orge", "Levure"],
+            "contenance": "4cl",
+            "price": "8€"
+        },
+        {
+            "categorie": "Whisky",
+            "nom": "Chivas",
+            "degre": 40,
+            "compositions": ["Eau", "Malt d'orge", "Levure"],
+            "contenance": "4cl",
+            "price": "10€"
+        },
+        {
+            "categorie": "Bières",
+            "nom": "Boffending",
+            "degre": 8,
+            "compositions": ["Eau", "Malt d'orge", "Levure"],
+            "contenance": "25cl",
+            "price": "4€"
+        },
+        {
+            "categorie": "Bières",
+            "nom": "Battin Fruitée",
+            "degre": 8,
+            "compositions": ["Eau", "Malt d'orge", "Levure"],
+            "contenance": "25cl",
+            "price": "4€"
+        },
+        {
+            "categorie": "Bières",
+            "nom": "Stella Artois",
+            "degre": 5,
+            "compositions": ["Eau", "Malt d'orge", "Levure"],
+            "contenance": "33cl",
+            "price": "3€"
+        },
+        {
+            "categorie": "Bières",
+            "nom": "Guinness",
+            "degre": 4.2,
+            "compositions": ["Eau", "Malt d'orge", "Levure"],
+            "contenance": "50cl",
+            "price": "8€"
+        },
+        {
+            "categorie": "Bières",
+            "nom": "Heineken",
+            "degre": 5,
+            "compositions": ["Eau", "Malt d'orge", "Levure"],
+            "contenance": "33cl",
+            "price": "4€"
+        },
+        {
+            "categorie": "Café",
+            "nom": "Espresso",
+            "degre": 0,
+            "compositions": ["Eau", "Café Moulu"],
+            "contenance": "4cl",
+            "price": "2€"
+        },
+        {
+            "categorie": "Café",
+            "nom": "Cappuccino",
+            "degre": 0,
+            "compositions": ["Eau", "Café Moulu", "Lait"],
+            "contenance": "25cl",
+            "price": "4€"
+        },
+        {
+            "categorie": "Café",
+            "nom": "Latte",
+            "degre": 0,
+            "compositions": ["Eau", "Café Moulu", "Lait"],
+            "contenance": "25cl",
+            "price": "4€"
+        },
+
+        {
+            "categorie": "Soft",
+            "nom": "Jus de d'orange",
+            "degre": 0,
+            "compositions": ["Jus d'orange frais"],
+            "contenance": "25cl",
+            "price": "3€"
+        },
+        {
+            "categorie": "Soft",
+            "nom": "Coca-Cola",
+            "degre": 0,
+            "compositions": ["Eau", "Sucre", "Caféine", "Acide phosphorique", "Arômes naturels"],
+            "contenance": "33cl",
+            "price": "2€"
+        },
+        {
+            "categorie": "Soft",
+            "nom": "Sprite",
+            "degre": 0,
+            "compositions": ["Eau gazéifiée", "Sucre", "Acide citrique", "Arômes naturels"],
+            "contenance": "33cl",
+            "price": "2€"
+        },
+        {
+            "categorie": "Soft",
+            "nom": "Limonade",
+            "degre": 0,
+            "compositions": ["Eau", "Sucre", "Jus de citron", "Acide citrique", "Arômes naturels"],
+            "contenance": "33cl",
+            "price": "3€"
+        },
+
+        {
+            "categorie": "Cocktails",
+            "nom": "Mojito",
+            "degre": 12,
+            "compositions": ["Rhum", "Feuilles de menthe", "Sucre", "Jus de citron vert", "Eau gazeuse"],
+            "contenance": "25cl",
+            "price": "8€"
+        },
+        {
+            "categorie": "Cocktails",
+            "nom": "Cosmopolitan",
+            "degre": 15,
+            "compositions": ["Vodka", "Triple sec", "Jus de canneberge", "Jus de citron vert"],
+            "contenance": "25cl",
+            "price": "10€"
+        },
+        {
+            "categorie": "Cocktails",
+            "nom": "Pina Colada",
+            "degre": 12,
+            "compositions": ["Rhum", "Lait de coco", "Jus d'ananas"],
+            "contenance": "25cl",
+            "price": "9€"
+        },
+        {
+            "categorie": "Cocktails",
+            "nom": "Margarita",
+            "degre": 15,
+            "compositions": ["Tequila", "Triple sec", "Jus de citron vert"],
+            "contenance": "25cl",
+            "price": "9€"
+        },
+
+        {
+            "categorie": "Vins",
+            "nom": "Chardonnay",
+            "degre": 13,
+            "compositions": ["Raisin"],
+            "contenance": "12cl",
+            "price": "7€"
+        },
+        {
+            "categorie": "Vins",
+            "nom": "Merlot",
+            "degre": 14,
+            "compositions": ["Raisin"],
+            "contenance": "12cl",
+            "price": "7€"
+        },
+        {
+            "categorie": "Vins",
+            "nom": "Cabernet Sauvignon",
+            "degre": 15,
+            "compositions": ["Raisin"],
+            "contenance": "12l",
+            "price": "10€"
+        },
+        {
+            "categorie": "Vins",
+            "nom": "Pinot Noir",
+            "degre": 14,
+            "compositions": ["Raisin"],
+            "contenance": "12cl",
+            "price": "7€"
+        },
+
+        {
+            "categorie": "Liqueurs",
+            "nom": "Baileys Irish Cream",
+            "degre": 17,
+            "compositions": ["Whisky", "Crème", "Chocolat"],
+            "contenance": "7cl",
+            "price": "6€"
+        },
+        {
+            "categorie": "Liqueurs",
+            "nom": "Amaretto",
+            "degre": 28,
+            "compositions": ["Amande amère"],
+            "contenance": "4cl",
+            "price": "4€"
+        },
+        {
+            "categorie": "Liqueurs",
+            "nom": "Kahlúa",
+            "degre": 20,
+            "compositions": ["Café", "Rhum", "Sucre"],
+            "contenance": "4cl",
+            "price": "4€"
+        },
+        {
+            "categorie": "Liqueurs",
+            "nom": "Jägermeister",
+            "degre": 35,
+            "compositions": ["Gingembre", "Cannelle", "Anis étoilé", "Cardamome verte", "Écorce d'orange"],
+            "contenance": "4cl",
+            "price": "2,30€"
+        } 
+    ]
+}

@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Josefin Sans";
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+}
+#accueil {
+  background-image: url("../img/fondern.png");
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0 4px 10px #292929;
+}
+#accueil p {
+  margin-top: 250px;
+}
+
+header {
+  background-color: black;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  position: fixed;
+  max-block-size: 80px;
+}
+
+.navbar {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin: auto;
+  padding: 30px;
+  transition: transform 0.3s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #dc1e2a;
+  transform: scale(0.96);
+}
+
+#logo img {
+  height: 110px;
+  margin-top: 1vh;
+  transition: transform 0.3s ease-in-out;
+}
+#logo img:hover {
+  transform: scale(0.96);
+}
+
+.screen {
+  padding: 10px 20px;
+  min-height: 50vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main {
+  padding-top: 70px; /* Ajout de la hauteur de la barre de navigation */
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #292929;
+  color: white;
+  margin-top: 20px;
+}
+
+.carousel-container {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--lx-gap);
+  margin-bottom: 20px;
+
+  #carousel {
+    aspect-ratio: 16/9;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .item {
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      transition: opacity 0.5s ease-in-out;
+
+      img {
+        object-fit: cover;
+        height: 100%;
+        transform: translateX(-50%);
+        transform: scale(0.7);
+        object-position: center;
+      }
+
+      figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30vh;
+        position: absolute;
+        bottom: 0;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #fff;
+        background-color: #e63737;
+        border-radius: 15px;
+        padding-top: 10px;
+        padding-bottom: 7px;
+        margin-bottom: 15px;
+        transition: transform 0.2s ease-in-out;
+        z-index: 1;
+      }
+      figcaption:hover {
+        cursor: pointer;
+        transform: translateX(-50%) scale(1.04);
+      }
+
+      &.active {
+        opacity: 1;
+        display: block;
+      }
+    }
+  }
+
+  .btn {
+    padding: 1em 2em;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    color: #fff;
+    background-color: #e63737;
+    transition: transform 0.2s ease-in-out;
+
+    &:active,
+    &:focus {
+      transform: translateY(-50%) scale(0.9);
+    }
+
+    &:hover {
+      transform: translateY(-50%) scale(0.96);
+    }
+  }
+
+  .prev {
+    left: -5%;
+  }
+
+  .next {
+    right: -5%;
+  }
+}
+p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#apropos a {
+  color: #242421;
+}
+
+#map {
+  height: 40vh;
+  width: 70%;
+  border-radius: 15px;
+}
+
+button.active {
+  background-color: white;
+  border-radius: 15px;
+  color: #e63737;
+  border-color: #e6373776;
+  padding: 8px;
+}
+section#carte.screen {
+  padding-top: 80px;
+}
+section#histoire.screen {
+  padding-top: 80px;
+}
+
+button {
+  background-color: #e63737;
+  border-radius: 15px;
+  color: white;
+  border-color: transparent;
+  padding: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+button:hover:not(.active) {
+  transform: scale(0.96);
+}
+.fa-brands {
+  font-size: 25px;
+}
+.fa-facebook-f {
+  font-size: 20px;
+}
+div.drink {
+  display: inline-flex;
+  padding: 10px;
+  max-width: 150px;
+  margin-top: 2vh;
+  line-height: 1;
+  border-right: 1px solid #e63737;
+  height: 20vh;
+}
+
+div.drink:first-child {
+  border-left: 1px solid #e63737;
+}
+
+.menu-selection {
+  justify-content: center;
+  align-items: center;
+}

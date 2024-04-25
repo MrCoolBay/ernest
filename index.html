@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'Ernest</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a
+          href="https://www.instagram.com/ernest_hemingway_reims"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#">Accueil</a>
+        <a href="#carte">La Carte</a>
+        <div id="logo">
+          <a href="#"><img src="img/logolond.png" alt="Logo du Bar" /></a>
+        </div>
+        <a href="#histoire">L'Histoire</a>
+        <a href="#apropos">Nous Trouver</a>
+        <a
+          href="https://www.facebook.com/ernest.hemingway.reims"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section id="accueil" class="screen">
+        <p>Vivez une expérience unique dans un cadre exceptionnel.</p>
+      </section>
+      <section id="carte" class="screen">
+        <h2>Notre Carte</h2>
+        <p>Découvrez nos boissons exclusives.</p>
+        <div class="carousel-container">
+          <div>
+            <div id="carousel">
+              <div class="item active">
+                <img src="img/caroussel/biere.png" alt="Image 1" />
+                <figcaption>Nos bières</figcaption>
+              </div>
+            </div>
+          </div>
+          <a class="btn prev"><i class="fas fa-hand-point-left"></i></a>
+          <a class="btn next"><i class="fas fa-hand-point-right"></i></a>
+        </div>
+        <div class="menu-selection">
+          <button class="button-item" data-category="Bières">Bières</button>
+          <button class="button-item" data-category="Café">Cafés</button>
+          <button class="button-item" data-category="Cocktails">
+            Cocktails
+          </button>
+          <button class="button-item" data-category="Soft">Softs</button>
+          <button class="button-item" data-category="Vins">Vins</button>
+          <button class="button-item" data-category="Liqueurs">Liqueurs</button>
+          <button class="button-item" data-category="Whisky">Whiskys</button>
+          <div id="displayArea"></div>
+        </div>
+        <div id="menu-items" class="menu-items"></div>
+        <br />
+      </section>
+      <section id="histoire" class="screen">
+        <h2>L'Histoire de Notre Bar</h2>
+        <p>
+          Bienvenue à l'Ernest, un bar emblématique niché au cœur de Reims, où
+          tradition et modernité se rencontrent pour créer une expérience
+          unique.
+          <br />
+          <br />
+          Fondé en 1954, l'Ernest a toujours été un lieu de convivialité et de
+          rencontre pour les habitants et les visiteurs de la ville. Nom de
+          notre fondateur, Ernest Dupont, un passionné de mixologie et de l'art
+          de recevoir, le bar a su évoluer tout en conservant son charme
+          d'antan.
+          <br />
+          <br />
+          Au fil des décennies, l'Ernest est devenu célèbre pour son ambiance
+          chaleureuse et son cadre élégant, où les murs témoignent d'une
+          histoire riche de rencontres et d'événements mémorables. Notre
+          sélection de boissons inclut des cocktails classiques et des créations
+          originales, mettant en avant les produits locaux et les innovations de
+          notre équipe talentueuse de barmans.
+          <br />
+          <br />
+          L'Ernest est plus qu'un simple bar ; c'est un morceau de l'histoire de
+          Reims, un lieu où chaque verre raconte une histoire. Nous vous
+          invitons à nous rejoindre pour découvrir par vous-même pourquoi
+          l'Ernest est tant apprécié depuis des générations. Venez pour le goût,
+          restez pour l'histoire.
+        </p>
+      </section>
+      <section id="apropos" class="screen">
+        <h2>Nous trouver</h2>
+        <p>Trouver notre adresse facilement !</p>
+        <p>
+          <a
+            href="https://www.google.com/maps?ll=49.255973,4.026451&z=20&t=m&hl=fr&gl=US&mapclient=apiv3&cid=13223506432575968191"
+            >69 Pl. Drouet d'Erlon, 51100 Reims</a
+          >
+        </p>
+
+        <div id="map">
+          <script>
+            ((g) => {
+              var h,
+                a,
+                k,
+                p = "The Google Maps JavaScript API",
+                c = "google",
+                l = "importLibrary",
+                q = "__ib__",
+                m = document,
+                b = window;
+              b = b[c] || (b[c] = {});
+              var d = b.maps || (b.maps = {}),
+                r = new Set(),
+                e = new URLSearchParams(),
+                u = () =>
+                  h ||
+                  (h = new Promise(async (f, n) => {
+                    await (a = m.createElement("script"));
+                    e.set("libraries", [...r] + "");
+                    for (k in g)
+                      e.set(
+                        k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
+                        g[k]
+                      );
+                    e.set("callback", c + ".maps." + q);
+                    a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+                    d[q] = f;
+                    a.onerror = () => (h = n(Error(p + " could not load.")));
+                    a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+                    m.head.append(a);
+                  }));
+              d[l]
+                ? console.warn(p + " only loads once. Ignoring:", g)
+                : (d[l] = (f, ...n) =>
+                    r.add(f) && u().then(() => d[l](f, ...n)));
+            })({
+              key: "AIzaSyDJb-MdIYUbu4fDXZA9FknQX-yplWYejEk",
+            });
+          </script>
+          <script
+            async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJb-MdIYUbu4fDXZA9FknQX-yplWYejEk&callback=console.debug&libraries=maps,marker&v=beta"
+          ></script>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2024 L'Ernest. Tous droits réservés.</p>
+      <p>Fait avec le <i class="fa-regular far fa-heart"></i> par l'ESGI.</p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="map.js"></script>
+  </body>
+</html>
